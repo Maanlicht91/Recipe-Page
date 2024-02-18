@@ -1,0 +1,185 @@
+:root {
+  --primary-nutmeg: hsl(14, 45%, 36%);
+  --primary-dark-rasperry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-gray: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Young-Sheriff;
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--wenge-brown);
+  font-family: Outfit;
+}
+
+body {
+  background-color: var(--eggshell);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  background-color: var(--white);
+  margin: 7.5rem auto;
+  width: 730px;
+  border-radius: 1.5rem;
+  padding-right: 1rem;
+  img {
+    padding: 2rem 1rem 0 2.5rem;
+    width: 720px;
+    border-radius: 2.5rem;
+  }
+  .container {
+    margin: 1.5rem 2.5rem;
+    padding-right: 5rem;
+    hr {
+      border: solid 1px var(--light-gray);
+      border-bottom: none;
+      margin: 2rem auto;
+    }
+
+    .food-description {
+      font-family: Young-Sheriff;
+      h1 {
+        line-height: 4rem;
+        font-size: 37px;
+        font-family: Young-Sheriff;
+        padding-bottom: 1rem;
+      }
+      p {
+        padding-bottom: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    .container-preparation {
+      background-color: var(--rose-white);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      width: 41rem;
+      h3 {
+        color: var(--primary-dark-rasperry);
+        padding-bottom: 0.6rem;
+      }
+      ul {
+        padding-left: 1.5rem;
+        line-height: 2;
+        font-size: 16px;
+        b {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .ingredients {
+      margin-top: 2rem;
+      h2 {
+        font-family: Young-Sheriff;
+        font-size: 28px;
+        color: var(--primary-nutmeg);
+        padding-bottom: 1rem;
+      }
+      ul {
+        line-height: 2;
+        padding-left: 1.2rem;
+      }
+      li {
+        padding-left: 1.5rem;
+      }
+    }
+
+    .instructions {
+      h2 {
+        font-family: Young-Sheriff;
+        font-size: 28px;
+        color: var(--primary-nutmeg);
+        padding: 1rem 0;
+      }
+      ul {
+        list-style-type: decimal;
+        line-height: 1.2;
+        padding-left: 1.2rem;
+        line-height: 1.3;
+      }
+      li {
+        padding-left: 1rem;
+        margin: 1rem;
+      }
+    }
+
+    .nutrition {
+      h2 {
+        font-family: Young Sheriff;
+        font-size: 28px;
+        color: var(--primary-nutmeg);
+        padding: 1rem 0;
+      }
+      p {
+        padding-bottom: 1rem;
+      }
+      table {
+        width: 100%;
+        padding-left: 2rem;
+        line-height: 3rem;
+        td {
+          border-bottom: 1px solid var(--light-gray);
+          b {
+            color: var(--primary-nutmeg);
+          }
+        }
+        tr:last-child td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  width: 100%;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: var(--primary-nutmeg);
+  }
+}
+
+@media (max-width: 640px) {
+  .main-container {
+    width: 350px;
+    margin: 0;
+    img {
+      width: 350px;
+      border-radius: 0;
+      padding: 0;
+    }
+    .container {
+      margin-right: 0;
+      .food-description h1 {
+        font-size: 28px;
+        line-height: 1;
+      }
+      .container-preparation {
+        width: 280px;
+      }
+    }
+  }
+
+}
