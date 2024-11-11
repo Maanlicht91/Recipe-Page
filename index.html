@@ -13,14 +13,11 @@
     />
 
     <title>Frontend Mentor | Recipe page</title>
-
-
   </head>
   <body>
     <section class="main-container">
-      <div class="food-img">
-        <img src="assets/images/image-omelette.jpeg" alt="food-image" />
-      </div>
+      <img src="assets/images/image-omelette.jpeg" alt="food-image" />
+
       <div class="container">
         <div class="food-description">
           <h1>Simple Omelette Recipe</h1>
@@ -31,7 +28,7 @@
           </p>
         </div>
         <div class="container-preparation">
-          <h3>Preparation Time</h3>
+          <h3>Preparation time</h3>
           <ul>
             <li><b>Total:</b> Approximately 10 minutes</li>
             <li><b>Preparation:</b> 5 minutes</li>
@@ -50,7 +47,7 @@
             </li>
           </ul>
         </div>
-        <hr />
+        <div class="fraction"></div>
         <div class="instructions">
           <h2>Instructions</h2>
           <ul>
@@ -84,7 +81,7 @@
             </li>
           </ul>
         </div>
-        <hr />
+        <div class="fraction"></div>
         <div class="nutrition">
           <h2>Nutrition</h2>
           <p>
@@ -93,20 +90,35 @@
           </p>
           <table>
             <tr>
-              <td>Calories</td>
-              <td><b>277kcal</b></td>
+              <td class="row">Calories</td>
+              <td class="row"><b>277kcal</b></td>
             </tr>
+
             <tr>
-              <td>Carbs</td>
-              <td><b>0g</b></td>
+              <td colspan="2" class="fraction"></td>
             </tr>
+
             <tr>
-              <td>Protein</td>
-              <td><b>20g</b></td>
+              <td class="row">Carbs</td>
+              <td class="row"><b>0g</b></td>
             </tr>
-            <tr class="last-one">
-              <td>Fat</td>
-              <td><b>22g</b></td>
+
+            <tr>
+              <td colspan="2" class="fraction"></td>
+            </tr>
+
+            <tr>
+              <td class="row">Protein</td>
+              <td class="row"><b>20g</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="fraction"></td>
+            </tr>
+
+            <tr>
+              <td class="row">Fat</td>
+              <td class="row"><b>22g</b></td>
             </tr>
           </table>
         </div>
