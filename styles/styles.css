@@ -51,7 +51,7 @@ body {
     font-size: 28px;
     font-weight: 400;
     color: var(--primary-nutmeg);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   .food-description {
     h1 {
@@ -106,11 +106,12 @@ body {
     ul {
       list-style-type: decimal;
       padding-left: 1rem;
-      line-height: 2;
+      line-height: 1.3;
     }
     li {
       color: var(--wenge-brown);
       padding-left: 1rem;
+      line-height: 1.5;
     }
     li::marker {
       color: var(--primary-nutmeg);
@@ -120,7 +121,7 @@ body {
 
   .nutrition {
     p {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     table {
       line-height: 3rem;
